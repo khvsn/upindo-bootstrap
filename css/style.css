@@ -107,7 +107,7 @@ body {
 }
 
 #page-header {
-  background: url(../img/bg/b1.jpg) top/cover no-repeat;
+  background: url(../img/bg/bg-putih.jpg) top/cover no-repeat;
   width: 100%;
   height: 40vh;
   background-size: cover;
@@ -120,7 +120,7 @@ body {
 
 #page-header h2,
 #page-header p {
-  color: #fff;
+  color: #000;
 }
 
 /*   */

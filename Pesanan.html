@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upindo.web</title>
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class = "navbar navbar-expand-lg navbar-light bg-white px-4 fixed-top shadow-sm">
+        <div class = "container-fluid">
+            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                <img src = "img/loogoo (3).png" alt = "site icon">
+                <span class = "text-uppercase fw-lighter ms-2"></span>
+            </a>
+            <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                <ul class = "navbar-nav ms-auto">
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "index.html">Home</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "shop.html">Shop</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#login"><i class="fas fa-user-circle" style="font-size: 27px;"></i></a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+    
+    
+    <!-- Start pesanan Kami -->
+    <div class="container" style="padding-top: 20vh;">
+      <div class = "title text-center pb-5">
+        <h2>PESANAN ANDA</h2>
+        <div class="custom-horizontal-line"></div>
+      </div>  
+        <div class="row">
+          <div class="col-md-12 mb-4">
+              <div class="table-responsive">
+                  <table class="table table-bordered">
+                      <thead>
+                          <tr>
+                              <th class="bg-success text-light">Gambar Produk</th>
+                              <th class="bg-success text-light">Nama Barang</th>
+                              <th class="bg-success text-light">Status</th>
+                              <th class="bg-success text-light">Kuantitas Duz</th>
+                              <th class="bg-success text-light">Kuantitas Pack</th>
+                              <th class="bg-success text-light">Kuantitas Pcs</th>
+                              <th class="bg-success text-light">Harga</th>
+                              <th class="bg-success text-light">Hapus</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><img src="img/produk upindo/BAKSO UDANG ( 6 PACK x 20 PCS ).jpg" alt="" style="max-width: 60%; height: 20%;"></td>
+                          <td>Baju</td>
+                          <td>Tersedia</td>
+                          <td>
+                            <button class="bg-success border-0 text-light" onclick="totalClick(-1)">-</button>
+                            <span id="totalClicks">0</span>
+                            <button class="bg-success border-0 text-light" onclick="totalClick(1)">+</button>
+                          </td>
+                          <td>
+                            <button class="bg-success border-0 text-light" onclick="totalClick(-1)">-</button>
+                            <span id="totalClicks">0</span>
+                            <button class="bg-success border-0 text-light" onclick="totalClick(1)">+</button>
+                          </td>
+                          <td>
+                            <button class="bg-success border-0 text-light" onclick="totalClick(-1)">-</button>
+                            <span id="totalClicks">0</span>
+                            <button class="bg-success border-0 text-light" onclick="totalClick(1)">+</button>
+                          </td>
+                          <td>Rp. 50.000</td>
+                          <td class="text-center" style="padding-top: 70px;"><button type="button" class="btn-close" aria-label="Close"></button></td>
+                        </tr>
+
+                        <tr>
+                          <td><img src="img/produk upindo/BAKSO UDANG ( 6 PACK x 20 PCS ).jpg" alt="" style="max-width: 60%; height: 20%;"></td>
+                          <td>Baju</td>
+                          <td>Tersedia</td>
+                          <td>
+                            <button class="bg-success border-0 text-light" onclick="totalClick(-1)">-</button>
+                            <span id="totalClicks">0</span>
+                            <button class="bg-success border-0 text-light" onclick="totalClick(1)">+</button>
+                          </td>
+                          <td>
+                            <button class="bg-success border-0 text-light" onclick="totalClick(-1)">-</button>
+                            <span id="totalClicks">0</span>
+                            <button class="bg-success border-0 text-light" onclick="totalClick(1)">+</button>
+                          </td>
+                          <td>
+                            <button class="bg-success border-0 text-light" onclick="totalClick(-1)">-</button>
+                            <span id="totalClicks">0</span>
+                            <button class="bg-success border-0 text-light" onclick="totalClick(1)">+</button>
+                          </td>
+                          <td>Rp. 50.000</td>
+                          <td class="text-center" style="padding-top: 70px;"><button type="button" class="btn-close" aria-label="Close"></button></td>
+                        </tr>
+                        
+                        <tr>
+                          <td><img src="img/produk upindo/BAKSO UDANG ( 6 PACK x 20 PCS ).jpg" alt="" style="max-width: 60%; height: 20%;"></td>
+                          <td>Baju</td>
+                          <td>Tersedia</td>
+                          <td>
+                            <button class="bg-success border-0 text-light" onclick="totalClick(-1)">-</button>
+                            <span id="totalClicks">0</span>
+                            <button class="bg-success border-0 text-light" onclick="totalClick(1)">+</button>
+                          </td>
+                          <td>
+                            <button class="bg-success border-0 text-light" onclick="totalClick(-1)">-</button>
+                            <span id="totalClicks">0</span>
+                            <button class="bg-success border-0 text-light" onclick="totalClick(1)">+</button>
+                          </td>
+                          <td>
+                            <button class="bg-success border-0 text-light" onclick="totalClick(-1)">-</button>
+                            <span id="totalClicks">0</span>
+                            <button class="bg-success border-0 text-light" onclick="totalClick(1)">+</button>
+                          </td>
+                          <td>Rp. 50.000</td>
+                          <td class="text-center" style="padding-top: 50px;"><button type="button" class="btn-close" aria-label="Close"></button></td>
+                        </tr>
+
+                        <tr>
+                          <td><img src="img/produk upindo/BAKSO UDANG ( 6 PACK x 20 PCS ).jpg" alt="" style="width: 150px;"></td>
+                          <td>Baju</td>
+                          <td>Tersedia</td>
+                          <td>
+                            <button class="bg-success border-0 text-light" onclick="totalClick(-1)">-</button>
+                            <span id="totalClicks">0</span>
+                            <button class="bg-success border-0 text-light" onclick="totalClick(1)">+</button>
+                          </td>
+                          <td>
+                            <button class="bg-success border-0 text-light" onclick="totalClick(-1)">-</button>
+                            <span id="totalClicks">0</span>
+                            <button class="bg-success border-0 text-light" onclick="totalClick(1)">+</button>
+                          </td>
+                          <td>
+                            <button class="bg-success border-0 text-light" onclick="totalClick(-1)">-</button>
+                            <span id="totalClicks">0</span>
+                            <button class="bg-success border-0 text-light" onclick="totalClick(1)">+</button>
+                          </td>
+                          <td>Rp. 50.000</td>
+                          <td class="text-center" style="padding-top: 50px;"><button type="button" class="btn-close" aria-label="Close"></button></td>
+                        </tr>
+                        
+                          <!-- Add more rows as needed -->
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+          <!-- disini -->
+          <div class="col-sm-6 mx-auto">
+            <div class="card">
+              <h5 class="card-header bg-success text-light">Total Belajaan</h5>
+              <div class="card-body">
+                <h5 class="card-title">Sub Total : </h5>
+                <span>Rp. 500.000</span>
+                <p class="card-text"></p>
+                <a href="verifikasi.html" class="btn btn-primary">Pesan Sekarang</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- end pesanan Kami -->
+        
+        <!-- Footer  -->
+        <footer class="mt-5">
+          <div class="copyright">
+            <p class="pt-2">Hak Cipta © 2023 | Kara Digital Solution</p>
+          </div>
+        </footer>
+
+
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

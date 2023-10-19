@@ -3,7 +3,7 @@
 :root {
   --lg-font: "Kaisei Tokumin", serif;
   --sm-font: "Poppins", sans-serif;
-  --green: #198754;
+  --green: #059305;
 }
 body {
   font-family: var(--sm-font);
@@ -36,7 +36,7 @@ body {
 .custom-horizontal-line {
   height: 10px;
   border-radius: 10px;
-  background-color: #198754;
+  background-color: var(--green) !important;
   margin: auto;
   width: 15%;
 }
@@ -53,7 +53,7 @@ body {
 /* header carousel */
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-  background-color: #198754;
+  background-color: var(--green) !important;
   border-radius: 10px;
 }
 .carousel-item {
@@ -62,7 +62,7 @@ body {
 }
 .carousel-inner h1 {
   font-size: 60px;
-  color: #088108;
+  background-color: var(--green) !important;
 }
 .carousel-item .btn {
   border-color: #fff !important;
@@ -97,7 +97,7 @@ body {
 .carousel-inner h1 {
   font-size: 60px;
   /* font-family: var(--lg-font); */
-  color: #088108;
+  background-color: var(--green) !important;
 }
 .carousel-item .btn {
   border-color: #fff !important;

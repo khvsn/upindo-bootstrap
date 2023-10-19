@@ -17,6 +17,15 @@ function resetFilterBtns() {
   });
 }
 
+var tombolTutup = document.getElementById('tombolTutup');
+var elemenHapus = document.getElementById('elemenHapus');
+
+// Menambahkan event listener untuk klik pada tombol
+tombolTutup.addEventListener('click', function() {
+  // Menghapus elemen
+  elemenHapus.remove();
+});
+
 function totalClick(click) {
   const totalClicks = document.getElementById("totalClicks");
   const sumvalue = parseInt(totalClicks.innerText) + click;

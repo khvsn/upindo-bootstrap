@@ -50,6 +50,27 @@ body {
   margin-top: 30px;
 }
 
+/* header carousel */
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: #198754;
+  border-radius: 10px;
+}
+.carousel-item {
+  height: 32rem;
+  background-color: #fff;
+}
+.carousel-inner h1 {
+  font-size: 60px;
+  color: #088108;
+}
+.carousel-item .btn {
+  border-color: #fff !important;
+}
+.carousel-item .btn:hover {
+  border-color: var(--green) !important;
+}
+
 /* navbar */
 .navbar {
   -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
@@ -92,6 +113,9 @@ body {
   margin-left: 50px;
   width: 400px;
 }
+
+/* feature */
+
 /* title */
 .title h2::before {
   position: absolute;
@@ -106,24 +130,7 @@ body {
   transform: translateY(-50%);
 }
 
-#page-header {
-  background: url(../img/bg/bg-putih.jpg) top/cover no-repeat;
-  width: 100%;
-  height: 40vh;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  margin-top: 80px;
-}
-
-#page-header h2,
-#page-header p {
-  color: #000;
-}
-
-/*   */
+/*collection*/
 .active-filter-btn {
   background-color: var(--green) !important;
   color: #fff !important;

@@ -49,16 +49,61 @@
     <!-- end of navbar -->
 
     <!-- header -->
-    <header id = "header" class = "vh-100" style = "padding-top: 104px;">
-        <div class = "container h-100 d-flex align-items-center carousel-inner">
-            <div class = "text-center carousel-item active">
-                <h2 class = "text-capitalize text-dark">Distributor</h2>
-                <h1 class = "text-capitalize">Produk Berkualitas</h1>
-                <a href = "shop.html" class = "btn mt-3 text-uppercase shadow mb-5">shop now</a>
+    <section id="carousel">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="padding-top: 10vh;">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/carousel.jpg" alt="Image to Blur" class="img-fluid  d-block w-100 h-100">
+            <div class="carousel-caption text-start text-dark" style="max-width: 400px; margin-left: 20px; height: 450px;">
             </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/feature/ma2.png" alt="Image to Blur" class="img-fluid d-block w-100 h-100">
+          </div>
+          <div class="carousel-item">
+            <img src="img/feature/fromzero3.jpg" alt="From zero To Hero" class="img-fluid d-block w-100 h-100">
+            <div class="carousel-caption text-dark" style="height: 450px;">
+            </div>
+          </div>
         </div>
-    </header>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
     <!-- end of header -->
+
+    <!-- about us -->
+    <section id="collection" class="py-5 mx-3">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="text-center">TENTANG KAMI</h2>
+            <div class="custom-horizontal-line"></div>
+            <div class="p-4 rounded-3 mt-4" style="background-color: rgba(5, 113, 5, 0.564)">
+              <h5 class="pt-4 text-center fw-bold">PT.Upindo Raya Semesta Borneo</h5>
+                <p class="text-light text-left">
+                  Kami adalah sebuah perusahaan distribusi, berkedudukan di Kota Samarinda, yang pada awal berdirinya pada tahun 2006 bernama UD. Upindo Raya.
+                  Sesuai dengan filosofi namanya saat ini,kami bercita-cita menjadi sebuah perusahan distribusi terbesar di Pulau Borneo.
+                  Area Coverage kami saat ini adalah Kalimantan Timur dan Kalimantan Utara, dan untuk membantu mendekatkan produk-produk yang kami distribusikan kepada para pelanggan, saat ini kami telah ditopang oleh Sembilan Mitra Distribusi yakni di Balikpapan, Tanah Grogot, Kutai Barat, Bontang, Sangata, Muara Wahau, Berau, Tanjung Selor dan Malinau. Dengan dukungan SDM yang kuat serta handal, dan support dari Para Suplayer, kami berkomitmen akan terus mengembangkan dan melebarkan sayap dengan membentuk mitra-mitra distribusi di berbagai area, baik didalam maupun diluar area coverage yang sudah ada.
+                  Agar lebih focus, Sistematis dan Bertanggungjawab, kami membagi kelompok suplayer kedalam Empat Devisi yakni :
+                  <ol class="text-light">
+                    <li>Devisi Snack, Coklat & Candy</li>
+                    <li>Devisi Jelly & Minuman</li>
+                    <li>Devisi Biscuit, Wafer & Bakry</li>
+                    <li>Devisi Sembako</li>
+                  </ol>
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Start Produk Kami -->
     <section id = "collection" class = "py-5">
@@ -70,17 +115,18 @@
             <div class = "row g-0">
                 <div class = "d-flex flex-wrap justify-content-center mt-5 filter-button-group">
                     <button type = "button" class = "btn m-2 text-dark active-filter-btn" data-filter = "*">All</button>
-                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".Produk2">Produk 2</button>
-                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".Produk3">Produk 3</button>
-                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".Produk4">Produk 4</button>
-                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".Produk5">Produk 5</button>
+                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".best">Best Sellers</button>
+                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".feat">Feature</button>
+                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".new">New arrival</button>
+                    <!-- <button type = "button" class = "btn m-2 text-dark" data-filter = ".Produk ">Produk 5</button> -->
                 </div>
+                
                 <!-- bagian foto produk -->
                 <section class="py-5">
                   <div class="container px-4 px-lg-5 mt-5">
-                    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4">
-                    <div class="col mb-5 col-lg-4 col-xl-3 p-2 feat">
-                        <div class="card h-100">
+                  <div class="collection-list mt-4 row gx-0 gy-3">
+                    <div class="col mb-5 col-lg-4 col-xl-3 p-2 best">
+                        <div class="card h-100 shadow">
                             <!-- Product image-->
                             <img class="card-img-top" src="img/produk upindo/ALFITO ( 6 PACK x 20 PCS ).jpg" alt="..." />
                             <!-- Product details-->
@@ -89,13 +135,12 @@
                               <span>-Stok Barang-</span><br>
                               <span class = "fw-bold">Rp. Harga</span>
                               <p class="card-text">Keterangan Barang.</p>
-                              <a href="detail.html" class="btn btn-sm px-2 mb-2">Lihat Barang</a>
-                              <a href="#" class="btn btn-sm mb-2"><i class="fas fa-shopping-cart"></i></a>
+                              <a href="Pesanan.html" class="btn btn-sm mb-2"><i class="fas fa-shopping-cart"></i></a>
                             </div>
                         </div>
-                    </div>
-                      <div class="col mb-5 col-lg-4 col-xl-3 p-2 feat">
-                          <div class="card h-100">
+                     </div>
+                      <div class="col mb-5 col-lg-4 col-xl-3 p-2 new">
+                          <div class="card h-100 shadow">
                               <!-- Product image-->
                               <img class="card-img-top" src="img/produk upindo/ALFITO ( 6 PACK x 20 PCS ).jpg" alt="..." />
                               <!-- Product details-->
@@ -104,14 +149,13 @@
                                 <span>-Stok Barang-</span><br>
                                 <span class = "fw-bold">Rp. Harga</span>
                                 <p class="card-text">Keterangan Barang.</p>
-                                <a href="detail.html" class="btn btn-sm px-2 mb-2">Lihat Barang</a>
-                                <a href="#" class="btn btn-sm mb-2"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="Pesanan.html" class="btn btn-sm mb-2"><i class="fas fa-shopping-cart"></i></a>
                               </div>
                           </div>
                       </div>
             
                       <div class="col mb-5 col-lg-4 col-xl-3 p-2 feat">
-                          <div class="card h-100">
+                          <div class="card h-100 shadow">
                               <!-- Product image-->
                               <img class="card-img-top" src="img/produk upindo/ALFITO ( 6 PACK x 20 PCS ).jpg" alt="..." />
                               <!-- Product details-->
@@ -120,14 +164,43 @@
                                 <span>-Stok Barang-</span><br>
                                 <span class = "fw-bold">Rp. Harga</span>
                                 <p class="card-text">Keterangan Barang.</p>
-                                <a href="detail.html" class="btn btn-sm px-2 mb-2">Lihat Barang</a>
-                                <a href="#" class="btn btn-sm mb-2"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="Pesanan.html" class="btn btn-sm mb-2"><i class="fas fa-shopping-cart"></i></a>
+                              </div>
+                          </div>
+                      </div>
+            
+                      <div class="col mb-5 col-lg-4 col-xl-3 p-2 best">
+                          <div class="card h-100 shadow">
+                              <!-- Product image-->
+                              <img class="card-img-top" src="img/produk upindo/ALFITO ( 6 PACK x 20 PCS ).jpg" alt="..." />
+                              <!-- Product details-->
+                              <div class="card-body p-4">
+                                <h5 class="card-title">Nama Barang</h5>
+                                <span>-Stok Barang-</span><br>
+                                <span class = "fw-bold">Rp. Harga</span>
+                                <p class="card-text">Keterangan Barang.</p>
+                                <a href="Pesanan.html" class="btn btn-sm mb-2"><i class="fas fa-shopping-cart"></i></a>
+                              </div>
+                          </div>
+                      </div>
+            
+                      <div class="col mb-5 col-lg-4 col-xl-3 p-2 new">
+                          <div class="card h-100 shadow">
+                              <!-- Product image-->
+                              <img class="card-img-top" src="img/produk upindo/ALFITO ( 6 PACK x 20 PCS ).jpg" alt="..." />
+                              <!-- Product details-->
+                              <div class="card-body p-4">
+                                <h5 class="card-title">Nama Barang</h5>
+                                <span>-Stok Barang-</span><br>
+                                <span class = "fw-bold">Rp. Harga</span>
+                                <p class="card-text">Keterangan Barang.</p>
+                                <a href="Pesanan.html" class="btn btn-sm mb-2"><i class="fas fa-shopping-cart"></i></a>
                               </div>
                           </div>
                       </div>
             
                       <div class="col mb-5 col-lg-4 col-xl-3 p-2 feat">
-                          <div class="card h-100">
+                          <div class="card h-100 shadow">
                               <!-- Product image-->
                               <img class="card-img-top" src="img/produk upindo/ALFITO ( 6 PACK x 20 PCS ).jpg" alt="..." />
                               <!-- Product details-->
@@ -136,14 +209,13 @@
                                 <span>-Stok Barang-</span><br>
                                 <span class = "fw-bold">Rp. Harga</span>
                                 <p class="card-text">Keterangan Barang.</p>
-                                <a href="detail.html" class="btn btn-sm px-2 mb-2">Lihat Barang</a>
-                                <a href="#" class="btn btn-sm mb-2"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="Pesanan.html" class="btn btn-sm mb-2"><i class="fas fa-shopping-cart"></i></a>
                               </div>
                           </div>
                       </div>
             
                       <div class="col mb-5 col-lg-4 col-xl-3 p-2 feat">
-                          <div class="card h-100">
+                          <div class="card h-100 shadow">
                               <!-- Product image-->
                               <img class="card-img-top" src="img/produk upindo/ALFITO ( 6 PACK x 20 PCS ).jpg" alt="..." />
                               <!-- Product details-->
@@ -152,14 +224,13 @@
                                 <span>-Stok Barang-</span><br>
                                 <span class = "fw-bold">Rp. Harga</span>
                                 <p class="card-text">Keterangan Barang.</p>
-                                <a href="detail.html" class="btn btn-sm px-2 mb-2">Lihat Barang</a>
-                                <a href="#" class="btn btn-sm mb-2"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="Pesanan.html" class="btn btn-sm mb-2"><i class="fas fa-shopping-cart"></i></a>
                               </div>
                           </div>
                       </div>
             
-                      <div class="col mb-5 col-lg-4 col-xl-3 p-2 feat">
-                          <div class="card h-100">
+                      <div class="col mb-5 col-lg-4 col-xl-3 p-2 new">
+                          <div class="card h-100 shadow">
                               <!-- Product image-->
                               <img class="card-img-top" src="img/produk upindo/ALFITO ( 6 PACK x 20 PCS ).jpg" alt="..." />
                               <!-- Product details-->
@@ -168,43 +239,11 @@
                                 <span>-Stok Barang-</span><br>
                                 <span class = "fw-bold">Rp. Harga</span>
                                 <p class="card-text">Keterangan Barang.</p>
-                                <a href="detail.html" class="btn btn-sm px-2 mb-2">Lihat Barang</a>
-                                <a href="#" class="btn btn-sm mb-2"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="Pesanan.html" class="btn btn-sm mb-2"><i class="fas fa-shopping-cart"></i></a>
                               </div>
                           </div>
+                        </div>
                       </div>
-            
-                      <div class="col mb-5 col-lg-4 col-xl-3 p-2 feat">
-                          <div class="card h-100">
-                              <!-- Product image-->
-                              <img class="card-img-top" src="img/produk upindo/ALFITO ( 6 PACK x 20 PCS ).jpg" alt="..." />
-                              <!-- Product details-->
-                              <div class="card-body p-4">
-                                <h5 class="card-title">Nama Barang</h5>
-                                <span>-Stok Barang-</span><br>
-                                <span class = "fw-bold">Rp. Harga</span>
-                                <p class="card-text">Keterangan Barang.</p>
-                                <a href="detail.html" class="btn btn-sm px-2 mb-2">Lihat Barang</a>
-                                <a href="#" class="btn btn-sm mb-2"><i class="fas fa-shopping-cart"></i></a>
-                              </div>
-                          </div>
-                      </div>
-            
-                      <div class="col mb-5 col-lg-4 col-xl-3 p-2 feat">
-                          <div class="card h-100">
-                              <!-- Product image-->
-                              <img class="card-img-top" src="img/produk upindo/ALFITO ( 6 PACK x 20 PCS ).jpg" alt="..." />
-                              <!-- Product details-->
-                              <div class="card-body p-4">
-                                <h5 class="card-title">Nama Barang</h5>
-                                <span>-Stok Barang-</span><br>
-                                <span class = "fw-bold">Rp. Harga</span>
-                                <p class="card-text">Keterangan Barang.</p>
-                                <a href="detail.html" class="btn btn-sm px-2 mb-2">Lihat Barang</a>
-                                <a href="#" class="btn btn-sm mb-2"><i class="fas fa-shopping-cart"></i></a>
-                              </div>
-                          </div>
-                            </div>
                     </div>
                   </div>
                 </section>
@@ -225,6 +264,7 @@
       </div>
     </footer>
 
+    <script src="js/jquery-3.7.1.js"></script>
     <!-- isotope js -->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <!-- bootstrap js -->

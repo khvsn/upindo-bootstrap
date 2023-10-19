@@ -1,3 +1,5 @@
+// kategori yang di Home
+
 // init Isotope
 var $grid = $('.collection-list').isotope({
   // options
@@ -16,7 +18,9 @@ function resetFilterBtns() {
     $(this).removeClass("active-filter-btn");
   });
 }
+// Kategori yang di Home End
 
+// Tombol menghilangkan Pesanan
 var tombolTutup = document.getElementById('tombolTutup');
 var elemenHapus = document.getElementById('elemenHapus');
 
@@ -26,6 +30,7 @@ tombolTutup.addEventListener('click', function() {
   elemenHapus.remove();
 });
 
+// Menambahkan Mengurangkan Kuantitas 
 function totalClick(click) {
   const totalClicks = document.getElementById("totalClicks");
   const sumvalue = parseInt(totalClicks.innerText) + click;

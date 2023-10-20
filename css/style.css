@@ -53,11 +53,12 @@ body {
 /* header carousel */
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
+  margin-top: 80px;
   background-color: var(--green) !important;
   border-radius: 10px;
 }
 .carousel-item {
-  height: 32rem;
+  /* height: 32rem; */
   background-color: #fff;
 }
 .carousel-inner h1 {
